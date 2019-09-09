@@ -1,5 +1,9 @@
+//intermediate solution
+//return the longest length
 function longestLength(string){
-    return string.reduce
+    return string.split(' ').reduce(function(acc, word){
+        return Math.max(acc, word.length)
+    }, 0);
 }
 
-// console.log(longestLength("This is a test"))
+console.log(longestLength("this is a test"))

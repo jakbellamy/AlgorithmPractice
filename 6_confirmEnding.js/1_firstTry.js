@@ -17,3 +17,11 @@ function ternaryConfirm(str, target){
 }
 
 console.log(ternaryConfirm('Bastian', 'n'))
+
+//with negative operator and substring
+
+function subConfirm(str, target){
+    return str.substr(-target.length) === target;
+}
+
+console.log(subConfirm('Bastian', 'n'))

@@ -1,10 +1,10 @@
 //Happy this one is neat :)
 
 function titleCase(str){
-    input = str.split(' ');
+    str = str.split(' ');
     product = [];
-    
-    input.forEach(word => {
+
+    str.forEach(word => {
         word = word.toLowerCase().split('');
         word[0] = word[0].toUpperCase();
         word = word.join('')
@@ -14,3 +14,4 @@ function titleCase(str){
 }
 
 console.log(titleCase("hopefully i am now titlecased"))
+

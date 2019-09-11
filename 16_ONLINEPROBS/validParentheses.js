@@ -6,11 +6,11 @@ function validParentheses(parens){
     for(i=1; i<parens.length; i++){
         if (parens[i] == ')'){
             open --
-        } else {
+        } else if (parens[i] == '('){
             open ++
         }
     }
     return open === 0 ? true : false
   }
 
-console.log(validParentheses(')()()()('))
+console.log(validParentheses('(asdf)d(dad)d(adf)a'))

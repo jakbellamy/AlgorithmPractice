@@ -13,4 +13,4 @@ function validParentheses(parens){
     return open === 0 ? true : false
   }
 
-console.log(validParentheses('(asdf)d(dad)d(adf)a'))
+console.log(validParentheses('(asdf)d(dad)d(adf)a'));

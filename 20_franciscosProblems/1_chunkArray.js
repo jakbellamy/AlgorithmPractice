@@ -32,3 +32,18 @@ let oneLoopChunk = (arr, size) => {
 }
 
 console.log(oneLoopChunk([1, 2, 3, 4, 5], 2))
+
+function chunked(arr, size){
+      const chunked = []
+      for(let char of arr){
+        const lastElement = chunked[chunked.length -1]
+        if(!lastElement || lastElement.length === size){
+          chunked.push([char])
+        }else{
+          lastElement.push(char)
+        }
+      }
+      return chunked 
+    }
+
+console.log(chunked([1, 2, 3, 4, 5], 2))

@@ -11,5 +11,5 @@ function mutation(arr){
     return true;
 }
 
-console.log(mutation(["Alien", "line"]));
+console.log(mutation(["ALien", "line"]));
 console.log(mutation(["hello", "Hey"]))

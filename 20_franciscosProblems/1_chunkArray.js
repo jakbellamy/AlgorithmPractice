@@ -22,8 +22,7 @@ let oneLoopChunk = (arr, size) => {
             subProduct.push(arr[i])
             product.push(subProduct)
             subProduct = []
-        } 
-        else {
+        }else {
             subProduct.push(arr[i])
         }
     }

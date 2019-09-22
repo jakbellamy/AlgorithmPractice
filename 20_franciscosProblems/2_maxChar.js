@@ -20,3 +20,20 @@ let maxChar = (string) => {
 }
 
 console.log(maxChar('abcccccbbbbd'))
+
+let frans = (str) => {
+    let charMap = {}, max = 0, maxChar = ''
+    for(let char of str){
+        !charMap[char] ? charMap[char] = 1 : charMap[char]++
+        if(charMap[char] > max){
+            max = charMap[char]
+            maxChar = char
+        }
+        if(charMap[char] == max){
+            maxChar = maxChar + ' and ' + charMap[char]
+        }
+    }
+    return maxChar
+}
+
+console.log(frans('abccd'))

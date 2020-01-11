@@ -1,4 +1,4 @@
-**********************************INSTRUCTIONS**********************************
+*****************************INSTRUCTIONS*****************************
 
 TASK
   -  Make a simple class called SnakesLadders.
@@ -6,7 +6,7 @@ TASK
   -  The test cases will call the method play(die1, die2) independently of the state of the game or the player turn.
 
   -  The variables die1 and die2 are the die thrown in a turn and are both integers between 1 and 6. The player will move the sum of die1 and die2.
---------------------------------------------------------------------------------
+----------------------------------------------------------------------
 RULES
   1. There are two players and both start off the board on square 0.
 
@@ -21,7 +21,7 @@ RULES
   6. Slide down snakes. Snakes move you back on the board because you have to slide down them. If you land exactly at the top of a snake, slide move the player all the way to the square at the bottom of the snake or chute. (even if you roll a double).
 
   7. Land exactly on the last square to win. The first person to reach the highest square on the board wins. But there's a twist! If you roll too high, your player "bounces" off the last square and moves back. You can only win by rolling the exact number needed to land on the last square. For example, if you are on square 98 and roll a five, move your game piece to 100 (two moves), then "bounce" back to 99, 98, 97 (three, four then five moves.)
---------------------------------------------------------------------------------
+----------------------------------------------------------------------
 RETURNS
   -  Return Player n Wins!. Where n is winning player that has landed on square 100 without any remaining moves left.
 
